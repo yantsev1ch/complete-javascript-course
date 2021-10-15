@@ -371,7 +371,7 @@ const me = 'Jonas'
 console.log(`I'm ${2037 - 1991} years old ${me}`)
 
 
- */
+
 
 const age = 23;
 // age >= 18 ? console.log('I like to drink wine 🍷') : console.log('I like to drink water 💧');
@@ -389,4 +389,11 @@ console.log(drink2);
 
 console.log(`I like to drink ${age >= 18 ? 'wine 🍷' : 'water 💧'}`);
 
+ */
+
+
+const bill = 430;
+const tip = bill >= 50 && bill <= 300 ? bill * 0.15 : bill * 0.2;
+const totalValue = bill + tip;
+console.log(`The bill was ${bill}, the tip was ${tip}, and the total value ${totalValue}`);
 
