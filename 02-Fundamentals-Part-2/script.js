@@ -36,7 +36,7 @@ console.log(appleOrangeJuice);
 
 const num = Number('23');
 
-*/
+
 
 // Function declaration
 function calcAge1(birthYear) {
@@ -51,4 +51,19 @@ const calcAge2 = function (birthYear) {
 }
 const age2 = calcAge2(1992);
 console.log(age1, age2);
+
+ */
+
+// Arrow function
+const calcAge3 = birthYeah => 2037 - birthYeah;
+console.log(calcAge3(1992));
+
+const yearsUntilRetirement = (birthYeah, firstName) => {
+    const age = 2037 - birthYeah;
+    const retirement = 65 - age;
+    // return retirement;
+    return `${firstName} retires in ${retirement} years`;
+}
+console.log(yearsUntilRetirement(1992, 'Andrei'));
+console.log(yearsUntilRetirement(1997, 'Vika'));
 
