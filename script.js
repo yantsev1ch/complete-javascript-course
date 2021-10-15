@@ -259,7 +259,7 @@ if (favourite === 23) {
 
 if (favourite !== 23) console.log('Why not 23?');
 
- */
+
 
 
 const hasDriversLicense = true; // A
@@ -283,5 +283,50 @@ if (hasDriversLicense && hasGoodVision && !isTired) {
 } else {
     console.log('Someone else should drive...');
 }
+
+ */
+
+
+const averageDolphins = (96 + 108 + 89) / 3;
+console.log(averageDolphins);
+const averageKoalas = (88 + 91 + 110) / 3;
+console.log(averageKoalas);
+
+if (averageDolphins > averageKoalas) {
+    console.log('Dolphins winner!')
+} else if (averageDolphins < averageKoalas) {
+    console.log('Koalas winner!')
+} else if (averageDolphins === averageKoalas) {
+    console.log('Both win!')
+}
+
+//Bonus 1
+const averageDolphinsBonus1 = (97 + 112 + 101) / 3;
+console.log(averageDolphinsBonus1);
+const averageKoalasBonus1 = (109 + 95 + 123) / 3;
+console.log(averageKoalasBonus1);
+
+if (averageDolphinsBonus1 > averageKoalasBonus1 && averageDolphinsBonus1 >= 100) {
+    console.log('Dolphins winner!')
+} else if (averageDolphinsBonus1 < averageKoalasBonus1 && averageKoalasBonus1 >= 100) {
+    console.log('Koalas winner!')
+} else if (averageDolphinsBonus1 === averageKoalasBonus1) {
+    console.log('Both win!')
+}
+
+//Bonus 2
+const averageDolphinsBonus2 = (97 + 112 + 101) / 3;
+console.log(averageDolphinsBonus2);
+const averageKoalasBonus2 = (109 + 95 + 106) / 3;
+console.log(averageKoalasBonus2);
+
+const teams = averageDolphinsBonus2 && averageKoalasBonus2
+
+if (averageDolphinsBonus2 === averageKoalasBonus2 && teams >= 100) {
+    console.log('Both win!')
+} else {
+    console.log('No one wins')
+}
+
 
 
