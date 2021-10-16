@@ -269,7 +269,7 @@ if (jonas[interestedIn]) {
     console.log('Wrong request! Choose between firstName, lastName, age, job, and friends')
 }
 
-jonas.location = 'Portugal';
+jonas.location = 'Minsk';
 jonas['twitter'] = '@yantsevich';
 console.log(jonas);
 
