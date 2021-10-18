@@ -458,7 +458,7 @@ while (dice !== 6) {
     if (dice === 6) console.log('Loop is about to end');
 }
 
- */
+
 const calcTip = function (bill) {
     return bill >= 50 && bill <= 300 ? bill * 0.15 : bill * 0.2;
 }
@@ -483,6 +483,9 @@ const calcAverage = (arr) => {
     return sum / arr.length;
 }
 console.log(calcAverage([2,3,7]));
+
+
+ */
 
 
 
