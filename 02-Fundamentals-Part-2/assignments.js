@@ -1,3 +1,4 @@
+/*
 const country = 'Belarus';
 const continent = 'Europe';
 let population = 10;
@@ -76,3 +77,92 @@ console.log(
 
 
 
+*/
+////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+
+
+const describeCountry = (country, population, capitalCity) => {
+    return `${country} has ${population} million people and it's capital city is ${capitalCity}.`
+}
+
+const descBelarus = describeCountry('Belarus', 10, 'Minsk');
+const descRussia = describeCountry('Russia', 144, 'Moscow');
+const descUkraine = describeCountry('Ukraine', 44, 'Kiev');
+console.log(descBelarus, descRussia, descUkraine);
+
+
+function percentageOfWorld1(population) {
+    return (population / 7900) * 100;
+}
+
+const percentageOfWorld2 = function (population) {
+    return (population / 7900) * 100;
+}
+
+const percBelarus = percentageOfWorld1(10);
+const percRussia = percentageOfWorld1(144);
+const percUkraine = percentageOfWorld1(44);
+console.log(percBelarus, percRussia, percUkraine);
+
+
+const percentageOfWorld3 = (population) => (population / 7900) * 100;
+
+
+const describePopulation = (country, population) => {
+    const percPopulation = percentageOfWorld1(population);
+    return `${country} has ${population} million people, which is about ${percPopulation}% of the world.`
+}
+console.log(describePopulation('Belarus', 10));
+console.log(describePopulation('Russia', 144));
+console.log(describePopulation('Ukraine', 44));
+
+
+const population = [10, 144, 44, 20];
+console.log(population.length === 4)
+const percentages = [
+    percentageOfWorld1(population[0]),
+    percentageOfWorld1(population[1]),
+    percentageOfWorld1(population[2]),
+    percentageOfWorld1(population[3])
+];
+console.log(percentages);
+
+
+const neighbours = ['Russia', 'Ukraine', 'Poland', 'Lithuania'];
+neighbours.push('Utopia');
+neighbours.pop();
+console.log(neighbours.includes('Germany') ? '' : 'Probably not a central European country :D');
+neighbours[neighbours.indexOf('Russia')] = 'Russian Federation';
+console.log(neighbours);
+
+
+const myCountry = {
+    country: 'Belarus',
+    capital: 'Minsk',
+    language: 'Russian',
+    population: 10,
+    neighbours: ['Russia', 'Ukraine', 'Poland', 'Lithuania'],
+    describe: function () {
+        console.log(
+            `${this.country} has ${this.population} million ${this.language}-speaking people, ${this.neighbours.length} neighbouring countries and capital called ${this.capital}.`
+        )
+    },
+    checkIsland: function () {
+        this.isIsland = this.neighbours.length === 0;
+    }
+}
+
+myCountry.describe();
+myCountry.checkIsland();
+
+console.log(`${myCountry.country} has ${myCountry.population} million ${myCountry.language}-speaking people, ${myCountry.neighbours.length} neighbouring countries and capital called ${myCountry.capital}.`);
+myCountry.population += 2;
+console.log(myCountry.population);
+myCountry['population'] -= 2;
+console.log(myCountry.population);
+
+
+
+for (let i = 1; i <= 50; i++) {
+    console.log(`Voter number ${i} is currently voting`);
+}
